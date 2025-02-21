@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 1000
+        while (true) {
+            let x = +prompt(`
+            请您选择操作:
+            1.存钱
+            2.取钱
+            3.查看余额
+            4.退出
+            `)
+            if (x === 4) {
+                break
+            }
+            switch (x) {
+                case 1 :
+                let y = +prompt('存钱的金额')
+                n += y
+                break
+                case 2 :
+                let z = +prompt('取钱的金额')
+                n -= y
+                break
+                case 3 :
+                let za= +prompt('取钱的金额')
+                n
+                break
+            }
+        }
+    </script>
+</body>
+</html>

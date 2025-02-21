@@ -123,6 +123,6 @@ while循环3要素：
 
 循环结束
 continue和break
-continue是退出本次循环，继续下回循环
+continue是退出本次循环，继续下回循环，通常是排除或者跳过某一项
 break是彻底退出循环
     
