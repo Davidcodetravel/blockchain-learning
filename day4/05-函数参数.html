@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function getSum() {
+        //     let num1 = +prompt('number1')
+        //     let num2 = +prompt('number2')
+        //     document.write(num1 + num2)
+        // }
+        // function CulSum(end) {
+        //     total = 0
+        //     for (let i = 1; i <= end; i++) {
+        //         total += i
+        //     }
+        //     document.write(total)
+        // }
+        // CulSum(50)
+        // CulSum(101)
+        function CulSum(start, end) {    // start, end是形参，形式上的参数
+            total = 0
+            for (let i = start; i <= end; i++) {
+                total += i
+            }
+            document.write(total)
+        }
+        CulSum(2,50)  // 实参 -- 只要是调用的，都是实参
+        CulSum(10, 101) // 实参
+    </script>
+</body>
+</html>
