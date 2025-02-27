@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 如果函数内部，变量没有声明，直接赋值，也可以当全局变量看，但是强烈不推荐
+        // function fn() {
+        //     num = 10
+        // }
+        // fn()
+        // console.log(num)
+        // // 函数内部的形参，可以看作是局部变量
+        // function fun(x, y) {
+        //     console.log(x)
+        // }
+        // fun(1, 2)
+        let num = 10
+        // 查找时先从当前作用域查找，如果没有再从上一层作用域查找，一层一层往上找
+        function fn() {
+            // let num = 20
+            function fun() {
+                // let num = 30
+                console.log(num)
+                
+            }
+            fun()
+        }
+        fn()
+    </script>
+</body>
+</html>

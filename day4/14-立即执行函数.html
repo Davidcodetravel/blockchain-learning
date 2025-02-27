@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // (function () {
+        //     console.log(11)
+            
+        // }) ()  
+        // 立即执行函数必须要加；分号
+        // (function () {
+        //     let num = 10
+        // })();
+        // (function () {
+        //     let num = 20
+        // })(); 
+        // 1. 第一种写法
+        (function (x, y) {
+            console.log(x + y)
+            
+        })(1, 5) // 第二个小括号是用来调用函数的意思，第二个小括号里面的是实参
+
+        // 2.第二种，最后拿一个小括包起来
+        ((function () {}) ())
+    </script>
+</body>
+</html>
