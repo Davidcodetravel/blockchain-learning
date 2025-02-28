@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(x, y) {
+            x = x || 0  // x=x或x=0，undefin当假看，逻辑或一真则真，前面为假，看后面，后面也为假，所以以后面的假为主
+            y = y || 0
+            console.log(x + y)
+        }
+        fn(1, 2)
+
+
+        let age = 18
+        // console.log(false && age++)  //与，不执行，一假则假
+        // console.log(11 || age++)  // 或，前面为真，后面也不执行
+
+        console.log(11 && 22) // 如果两个都是真，则返回最后一个真值
+        console.log(11 || 22) // 一真则真，输出第一个真值
+        
+        
+        
+        
+    </script>
+</body>
+</html>
