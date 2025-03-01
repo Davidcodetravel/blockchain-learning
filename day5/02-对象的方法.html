@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            uname: '刘德华',
+            // 方法，在对象外面的叫函数，在对象里面的叫方法
+            song: function (x, y) {
+                console.log(x + y)
+            },
+            dance: function (x, y) {
+
+            }
+        }
+        // 方法的调用 对象名，方法名
+        obj.song(1, 5)
+        obj.sing = function (x,y) {
+            console.log(x * y)
+        }
+
+        obj.sing(2,5)
+    </script>
+</body>
+</html>
