@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for in 我们不推荐遍历数组
+        // let arr = ['pink', 'red', 'blue']
+        // for (let k in arr) {
+        //     console.log(k) // k打印的是下标和索引号，输出的是字符串
+        //     console.log(arr[k]);
+            
+        // }
+        // 1. 遍历对象 for in 
+        let obj = {
+            uname: 'pink',
+            age: 18,
+            gender: 'male'
+        }
+        // 2. 遍历对象
+        for (let k in obj) {
+            // console.log(k) // k 输出的属性名 'uname', 'age', 'gender'
+            // console.log(obj.age) 之前
+            // console.log(obj.k)   相当于console.log(obj.'uname')，所以采用另一种方法
+            console.log(obj[k]) // 输出属性值 obj[k]
+        }
+
+
+    </script>
+</body>
+</html>

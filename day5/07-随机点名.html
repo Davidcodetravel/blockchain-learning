@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['王洪文', '张春桥', '江青', '姚文元']
+        // // 1. 得到一个随机数，作为数组的索引号，这个随机数0-6
+        let i = Math.floor(Math.random() * arr.length)
+        // // 2. 输出显示
+        // console.log(arr[i]);
+
+        // 1. 不允许重复   splice(起始位置(下标), 删除几个元素)   splice(i, 1)
+        arr.splice(i, 1)
+        console.log(arr);
+        
+    </script>
+</body>
+</html>

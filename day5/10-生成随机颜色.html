@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let arr = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f']
+        // 1. 自定义一个随机颜色函数
+        function getRandom(N, M) {
+            return Math.floor(Math.random() * (M - N + 1)) + 1
+        }
+        function getRandomColor(flag = true) {
+            // 3. 如果是true，则返回#ffffff
+            // 4. 否则是false，则返回rgb(255,255,255)
+            if (flag) {
+                let str = '#'
+                for (let i = 1; i <= 6; i++) {
+                    str = str + arr[getRandom(0, arr.length)]
+                    
+                }
+                return str
+            } else {
+                let r = getRandom(0, 255)
+                let g = getRandom(0, 255)
+                let b = getRandom(0, 255)
+                return `rgb(${r},${g},${b})`
+            }
+
+        }
+        // 2. 调用函数
+        console.log(getRandomColor(true))
+
+        // let str = '#'
+        // str += 'f'
+         
+    </script>
+</body>
+</html>
